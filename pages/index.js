@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header'
+import SkillsSection from '../Components/SkillsSection'
 export default function Home() {
   return (
     <div className="container">
@@ -19,6 +20,7 @@ export default function Home() {
       
       <Navbar />
       <Header />
+      <SkillsSection />
       
       
     </div>
