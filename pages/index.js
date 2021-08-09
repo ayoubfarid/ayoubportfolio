@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header'
 import SkillsSection from '../Components/SkillsSection'
+import Work from '../Components/Work'
 export default function Home() {
   return (
     <div className="container">
@@ -22,7 +23,7 @@ export default function Home() {
       <Header />
       <SkillsSection />
       
-      
+      <Work />
     </div>
   )
 }

@@ -30,9 +30,7 @@ const SkillsSection = () => {
               />
             </div>
             <div className="d-flex align-items-center   tools-lang ">
-              
-                <h4 className="mr-auto p-2 col-5 ">Front-end</h4>
-              
+              <h4 className="mr-auto p-2 col-5 ">Front-end</h4>
 
               <div className="col-7 p-2 d-flex justify-content-between">
                 <Image
@@ -56,28 +54,25 @@ const SkillsSection = () => {
               </div>
             </div>
             <div className="d-flex align-items-center   tools-lang ">
-              
               <h4 className="mr-auto p-2 col-5 ">Back-end</h4>
-            
 
-            <div className="col-7 p-2 d-flex justify-content-between">
-              <Image
-                src="/Icons/skills/logos/logo-spring-icon.svg"
-                alt="Welcoming emojie"
-                width={140}
-                height={40}
-              />
-              <Image
-                src="/Icons/skills/logos/logo-laravel-icon.svg"
-                alt="Welcoming emojie"
-                width={40}
-                height={40}
-              />
-              
+              <div className="col-7 p-2 d-flex justify-content-between">
+                <Image
+                  src="/Icons/skills/logos/logo-spring-icon.svg"
+                  alt="Welcoming emojie"
+                  width={140}
+                  height={40}
+                />
+                <Image
+                  src="/Icons/skills/logos/logo-laravel-icon.svg"
+                  alt="Welcoming emojie"
+                  width={40}
+                  height={40}
+                />
+              </div>
             </div>
           </div>
-          </div>
-          
+
           <div className="col-6 card">
             <Image
               src="/Icons/skills/uiuxicon.png"
@@ -96,22 +91,20 @@ const SkillsSection = () => {
               />
             </div>
             <div className="d-flex align-items-center   tools-lang ">
-              
-                <h4 className="mr-auto p-2 col-5 ">software</h4>
-              
+              <h4 className="mr-auto p-2 col-5 ">Software</h4>
 
               <div className="col-7 p-2 d-flex justify-content-between">
                 <Image
                   src="/Icons/skills/logos/logo-ai-icon.svg"
                   alt="Welcoming emojie"
                   width={40}
-                  height={42}
+                  height={40}
                 />
                 <Image
                   src="/Icons/skills/logos/logo-ps-icon.svg"
                   alt="Welcoming emojie"
-                  width={46}
-                  height={46}
+                  width={40}
+                  height={40}
                 />
                 <Image
                   src="/Icons/skills/logos/logo-figma-icon.svg"
@@ -122,26 +115,19 @@ const SkillsSection = () => {
               </div>
             </div>
             <div className="d-flex align-items-center   tools-lang ">
-              
               <h4 className="mr-auto p-2 col-5 "></h4>
-            
 
-            <div className="col-7 p-2 d-flex justify-content-between">
-             
-              
-              
+              <div className="col-7 p-2 d-flex justify-content-between"></div>
             </div>
-          </div>
           </div>
         </div>
       </div>
       <style jsx>
         {`
-
-        .tools-lang, .tools-lang-head{
-            width:85%;
-            
-        }
+          .tools-lang,
+          .tools-lang-head {
+            width: 85%;
+          }
 
           .tools-lang h4 {
             font-weight: normal;
@@ -151,7 +137,6 @@ const SkillsSection = () => {
           }
 
           .cards-skils {
-            
             justify-content: space-around;
           }
           .cards-skils .card h3 {

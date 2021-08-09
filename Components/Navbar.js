@@ -1,5 +1,3 @@
-
-
 const Navbar = () => {
   return (
     <div className="container px-4">
@@ -7,33 +5,35 @@ const Navbar = () => {
         <div className="col">
           <h1 className="logo-title">ayoubfarid</h1>
         </div>
-        <div className="col">
+        <div className="col ">
           <nav>
-            <ul>
-              <li>
+            <ul className="nav justify-content-end align-items-center">
+              <li className="nav-item">
                 <a>Skills</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a>Work</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a>Resume</a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a>Contact</a>
               </li>
-              <li>
-                  
-                <a>Hire me</a>
+              <li className="nav-item">
+                <button  type="button" className="btn   btn-warning ">
+                  {" "}
+                  Hire me
+                </button>
               </li>
             </ul>
           </nav>
         </div>
       </div>
       <style jsx>{`
-          *{
-              font-family:Poppins
-          }
+        * {
+          font-family: Poppins;
+        }
         .container {
           margin-top: 50px;
         }
@@ -41,7 +41,6 @@ const Navbar = () => {
           font-size: 18px;
           color: #000000;
           font-weight: 500;
-          
         }
         li {
           display: inline;
