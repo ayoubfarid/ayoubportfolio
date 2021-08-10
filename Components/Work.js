@@ -76,6 +76,7 @@ const Work = () => {
             onSwiper={(swiper) => console.log(swiper)}
           >
             {projects.map((project, index) => (
+              
               <SwiperSlide>
                 <div key={index} className="card col">
                   <Image
@@ -83,6 +84,7 @@ const Work = () => {
                     alt="Welcoming emojie"
                     width={721}
                     height={541}
+                    layout="responsive"
                   />
                   <div className="card-cat">{project.categorie}</div>
                   <div className="card-desc">
