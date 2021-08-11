@@ -1,5 +1,48 @@
 import Image from "next/image";
 const Resume = () => {
+  var experinces = [
+    {
+      id: "1",
+      company: "Shipinfy",
+      role: "Ui/Ux Designer & Front End Dev",
+      period: "Apr 2021 - present",
+      postDesc:
+        "Contribute in developping shipinfy app by Designe diffrent Ui for the app from ui to code",
+      indicatorImg: "/experiences/indicator.svg",
+      stack: {
+        image: "",
+      },
+    },
+    {
+      id: "2",
+      company: "Hight School of technologie Essaouira",
+      role: "Fullstack Web-developer",
+      period: "Apr 2020 - Jun 2020",
+      postDesc: "Developpe an e-commerce web app using Laravel /vue ",
+      indicatorImg: "/experiences/indicatorDisabled.svg",
+      stack: {
+        image: "",
+      },
+    },
+  ];
+  var educations = [
+    {
+      id: "1",
+      school: "Faculty of science and technologie Gueliz",
+      level: "Bachlor's degree at computer science",
+      period: "2020 - 2021",
+      indicatorImg: "/experiences/indicator.svg",
+      postDesc: "Learn Advanced programming language and Networking:Routing and protocols  , -Web stack :Angular/Spring , -Java IHM, ",
+    },
+    {
+      id: "2",
+      school: "Hight School of technologie Essaouira",
+      level: " Computer science student",
+      period: "2018 - 2020",
+      indicatorImg: "/experiences/indicatorDisabled.svg",
+      postDesc: "Learn programming language fundamentals such as Algorithm, C ,C++, Java . -Web developpement:PHP,HTML,XML,JQUERY,CSS,SQL -Project Management:UML,Merise",
+    },
+  ];
   return (
     <div className="container section-4">
       <div className="row ">
@@ -10,28 +53,36 @@ const Resume = () => {
       <div className="row  ">
         <div className="col mx-auto">
           <h3>Experiences</h3>
-          <div className=" d-flex p-4 align-items-center">
-            <Image src="/experiences/indicator.svg" width={55} height={262} />
-            <div className="card p-4  align-items-start">
-             
-                <p className="sup-headline ">Shipinfy</p>
-                <h3 className="headline">Ui/Ux Designer & Front End Dev</h3>
-                <p className="sub-headline">Apr 2021 - present</p>
-                <p className="body-desc">
-                  Contribute in developping shipinfy app <br/>-by Designe diffrent Ui
-                  for the app from ui to code
-                
-              </p>
+          {experinces.map((experience, index) => (
+            <div key={experience.id} className=" d-flex p-4 align-items-center">
+              <Image src={experience.indicatorImg} width={55} height={262} />
+              <div className="card-exp p-4  align-items-start">
+                <p className="sup-headline ">{experience.company}</p>
+                <h3 className="headline">{experience.role}</h3>
+                <p className="sub-headline">{experience.period}</p>
+                <p className="body-desc">{experience.postDesc}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
         <div className="col">
           <h3>Education</h3>
+          {educations.map((education, index) => (
+            <div key={education.id} className=" d-flex p-4 align-items-center">
+              <Image src={education.indicatorImg} width={55} height={262} />
+              <div className="card-exp p-4  align-items-start">
+                <p className="sup-headline ">{education.school}</p>
+                <h3 className="headline">{education.level}</h3>
+                <p className="sub-headline">{education.period}</p>
+                <p className="body-desc">{education.postDesc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <style jsx>
         {`
-        .card .body-desc{
+        .card-exp .body-desc{
           font-weight: 500;
           font-size: 12px;
           
@@ -40,7 +91,7 @@ const Resume = () => {
           color: rgba(0, 0, 0, 0.75);
 
         }
-        .card .sub-headline{
+        .card-exp .sub-headline{
           font-weight: 500;
           font-size: 12px;
           
@@ -48,22 +99,23 @@ const Resume = () => {
 
           color: rgba(0, 0, 0, 0.5);
         }
-        .card .headline{
+        .card-exp .headline{
           font-weight: 500;
-          
+          text-align:left;
           line-height: 30px;
           letter-spacing: -0.03em;
 
           color: #000000;
         }
-        .card .sup-headline{
+        .card-exp .sup-headline{
           font-size: 14px;
           
           letter-spacing: -0.03em;
 
           color: #FFCD00;
         }
-        .section-4 .card{
+        .section-4 .card-exp{
+          text-align:left;
           width: 401px;
           height: 227px;
           background: #FFFFFF;
@@ -72,7 +124,7 @@ const Resume = () => {
           margin-left:25px;
           
         }
-        .section-4 .card::before {
+        .section-4 .card-exp::before {
           content: "";
           
           }
