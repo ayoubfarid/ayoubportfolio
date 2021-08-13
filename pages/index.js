@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 import SkillsSection from "../Components/SkillsSection";
 import Work from "../Components/Work";
 import Resume from "../Components/Resume";
+import Contacts from "../Components/Contacts";
 export default function Home() {
   return (
     <div className="container">
@@ -21,9 +22,11 @@ export default function Home() {
       <Navbar />
       <Header />
       <SkillsSection />
+      
 
       <Work />
       <Resume />
+      <Contacts />
     </div>
   );
 }

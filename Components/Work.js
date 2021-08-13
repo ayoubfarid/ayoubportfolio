@@ -66,7 +66,7 @@ const Work = () => {
   ];
   return (
     <div className="container">
-      <div className="row section-3">
+      <div className="row section-3 mt-4">
         <div className="head">
           <h2>Work</h2>
           <p>
@@ -83,8 +83,8 @@ const Work = () => {
           >
             {projects.map((project, index) => (
               
-              <SwiperSlide>
-                <div key={project.id} className="card col">
+              <SwiperSlide key={project.id}>
+                <div  className="card col">
                   <Image
                     src={project.image}
                     alt="Welcoming emojie"

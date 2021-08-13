@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row section-1 ">
         <div className="col article-1">
           <div className="card-hello ">

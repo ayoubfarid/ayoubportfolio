@@ -85,9 +85,9 @@ const Resume = () => {
         .card-exp .body-desc{
           font-weight: 500;
           font-size: 12px;
-          
+          line-height: 22px;
           letter-spacing: -0.03em;
-
+          word-break: break-all;
           color: rgba(0, 0, 0, 0.75);
 
         }
