@@ -5,7 +5,7 @@ const Header = () => {
     <div className="container ">
       <div className="row section-1 ">
         <div className="col article-1">
-          <div className="card-hello ">
+          <div className="card-hello  ">
             <Image
               src="/Icons/hand.svg"
               alt="Welcoming emojie"
@@ -17,7 +17,7 @@ const Header = () => {
               <p>Welcome to my Portfolio</p>
             </div>
           </div>
-          <div className="card-designer">
+          <div className="card-designer  d-none align-items-center justify-content-center d-xl-flex">
             <Image
               src="/Icons/pencilui.png"
               alt="Welcoming emojie"
@@ -29,7 +29,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="col article-2">
+        <div className="col article-2 mt-3">
           <div>
             <Image
               src="/Icons/avatar.png"
@@ -85,8 +85,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="col article-3">
-          <div className="card-dev ">
+        <div className="col article-3 d-none d-xl-block">
+          <div className="card-dev">
             <Image
               src="/Icons/devicon.png"
               alt="Welcoming emojie"
@@ -129,9 +129,7 @@ const Header = () => {
           font-size: 24px;
         }
         .card-designer {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          
 
           margin-top: 150px;
           width: 300px;

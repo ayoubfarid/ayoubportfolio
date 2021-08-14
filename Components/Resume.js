@@ -32,7 +32,8 @@ const Resume = () => {
       level: "Bachlor's degree at computer science",
       period: "2020 - 2021",
       indicatorImg: "/experiences/indicator.svg",
-      postDesc: "Learn Advanced programming language and Networking:Routing and protocols  , -Web stack :Angular/Spring , -Java IHM, ",
+      postDesc:
+        "Learn Advanced programming language and Networking:Routing and protocols  , -Web stack :Angular/Spring , -Java IHM, ",
     },
     {
       id: "2",
@@ -40,62 +41,74 @@ const Resume = () => {
       level: " Computer science student",
       period: "2018 - 2020",
       indicatorImg: "/experiences/indicatorDisabled.svg",
-      postDesc: "Learn programming language fundamentals such as Algorithm, C ,C++, Java . -Web developpement:PHP,HTML,XML,JQUERY,CSS,SQL -Project Management:UML,Merise",
+      postDesc:
+        "Learn programming language fundamentals such as Algorithm, C ,C++, Java .<br> -Web developpement:PHP,HTML,XML,JQUERY,CSS,SQL  -Project Management:UML,Merise",
     },
   ];
   return (
     <div className="container section-4">
       <div className="row ">
         <div className="head">
-          <h2>Work</h2>
+          <h2>Resume</h2>
         </div>
       </div>
       <div className="row  ">
         <div className="col mx-auto">
-          <h3>Experiences</h3>
+          <h3 className="m-4">Experiences</h3>
+          <div  className="justify-content-center ">
+            
+          
           {experinces.map((experience, index) => (
-            <div key={experience.id} className=" d-flex p-4 align-items-center">
+            <div key={experience.id} className=" d-flex p-1 mt-3 align-items-center">
               <Image src={experience.indicatorImg} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{experience.company}</p>
                 <h3 className="headline">{experience.role}</h3>
                 <p className="sub-headline">{experience.period}</p>
-                <p className="body-desc">{experience.postDesc}</p>
+                <p
+                  className="body-desc"
+                  dangerouslySetInnerHTML={{ __html: experience.postDesc }}
+                ></p>
               </div>
             </div>
           ))}
-        </div>
+        </div></div>
         <div className="col">
-          <h3>Education</h3>
+          <h3 className="m-4">Education</h3>
+          <div  className="justify-content-center ">
           {educations.map((education, index) => (
-            <div key={education.id} className=" d-flex p-4 align-items-center">
+            <div key={education.id} className=" d-flex p-1 mt-3 align-items-center">
               <Image src={education.indicatorImg} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{education.school}</p>
                 <h3 className="headline">{education.level}</h3>
                 <p className="sub-headline">{education.period}</p>
-                <p className="body-desc">{education.postDesc}</p>
+                <p
+                  className="body-desc content"
+                  dangerouslySetInnerHTML={{ __html: education.postDesc }}
+                ></p>
               </div>
             </div>
           ))}
-        </div>
+        </div></div>
       </div>
       <style jsx>
         {`
         .card-exp .body-desc{
           font-weight: 500;
           font-size: 12px;
-          line-height: 22px;
-          letter-spacing: -0.03em;
           word-break: break-all;
+  white-space: pre-wrap;
           color: rgba(0, 0, 0, 0.75);
+          
+        letter-spacing: 0.06em;
 
         }
         .card-exp .sub-headline{
           font-weight: 500;
           font-size: 12px;
           
-          letter-spacing: -0.03em;
+         
 
           color: rgba(0, 0, 0, 0.5);
         }
@@ -103,7 +116,7 @@ const Resume = () => {
           font-weight: 500;
           text-align:left;
           line-height: 30px;
-          letter-spacing: -0.03em;
+          
 
           color: #000000;
         }
@@ -117,11 +130,13 @@ const Resume = () => {
         .section-4 .card-exp{
           text-align:left;
           width: 401px;
-          height: 227px;
+          min-height: 227px;
           background: #FFFFFF;
           box-shadow: 0px 2px 37px rgba(169, 169, 169, 0.39);
           border-radius: 26px;
-          margin-left:25px;
+          margin-left:10px;
+          
+          
           
         }
         .section-4 .card-exp::before {

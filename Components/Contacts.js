@@ -4,12 +4,12 @@ const Contacts = () => {
     <div className="container mt-4 ">
       <div className="row section-4 p-4">
         <div className="head">
-          <h2> Contact </h2>
+          <h2  className="mb-4"> Contact </h2>
         </div>
 
-        <div className="container p-4">
+        <div className="container ">
           <div className="row ">
-            <div className="col-6 contact d-flex align-items-start">
+            <div className="col contact d-flex align-items-start">
               <div className="contact-desc">
                 <h2 className="head">I’m excited</h2>
                 <p className="text-desc">
@@ -25,7 +25,7 @@ const Contacts = () => {
               />
             </div>
 
-            <div className="col-6 ">
+            <div className="col ">
               <form>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
@@ -68,7 +68,9 @@ const Contacts = () => {
         button{
             width:100%
         }
-      
+        .contact-desc{
+          min-width:350px;
+        }
           .contact-desc .text-desc {
             font-weight: normal;
             font-size: 18px;

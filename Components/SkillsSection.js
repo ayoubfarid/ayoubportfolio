@@ -3,7 +3,7 @@ import Image from "next/image";
 const SkillsSection = () => {
   return (
     <div>
-      <div className="row section-2">
+      <div className="row section-2 mt-5">
         <div className="head">
           <h2>Skills</h2>
           <p>
@@ -11,7 +11,7 @@ const SkillsSection = () => {
             several project as Ui/Ux Designer and Web Developper
           </p>
         </div>
-        <div className="cards-skils row p-3">
+        <div className="cards-skils mt-2 row p-3">
           <div className="col-6 card ">
             <Image
               src="/Icons/skills/devicon.png"
@@ -73,7 +73,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="col-6 card">
+          <div className="col-6 card mt-2">
             <Image
               src="/Icons/skills/uiuxicon.png"
               alt="Welcoming emojie"
@@ -156,6 +156,7 @@ const SkillsSection = () => {
           .cards-skils .card {
             width: 595px;
             height: 558px;
+            min-height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
