@@ -1,9 +1,9 @@
 import Image from "next/image";
 const Contacts = () => {
   return (
-    <div className="container mt-4 ">
-      <div className="row section-4 p-4">
-        <div className="head">
+    <div className="container  ">
+      <div className="row section-4 mt-5">
+        <div id="contact" className="head mt-5">
           <h2  className="mb-4"> Contact </h2>
         </div>
 

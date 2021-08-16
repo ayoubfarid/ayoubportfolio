@@ -17,7 +17,7 @@ const Header = () => {
               <p>Welcome to my Portfolio</p>
             </div>
           </div>
-          <div className="card-designer   d-none align-items-center justify-content-center d-xl-flex">
+          <div className="card-designer  d-none align-items-center justify-content-center d-xl-flex">
             <Image
               src="/Icons/pencilui.png"
               alt="Welcoming emojie"

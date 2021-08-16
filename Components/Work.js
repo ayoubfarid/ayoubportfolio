@@ -66,8 +66,8 @@ const Work = () => {
   ];
   return (
     <div className="container">
-      <div className="row section-3 mt-4">
-        <div className="head">
+      <div className="row section-3 mt-5">
+        <div id="work" className="head mt-5">
           <h2>Work</h2>
           <p>
             here you find some project that I done before such us User

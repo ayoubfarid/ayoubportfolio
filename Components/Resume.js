@@ -46,13 +46,13 @@ const Resume = () => {
     },
   ];
   return (
-    <div className="container section-4">
+    <div className="container section-4 mt-5">
       <div className="row ">
-        <div className="head">
+        <div id="resume" className="head mt-5">
           <h2>Resume</h2>
         </div>
       </div>
-      <div className="row  ">
+      <div className="row d-flex justify-content-between ">
         <div className="col-md-6 justify-content-center mx-auto">
           <h3 className="m-4">Experiences</h3>
           <div  className=" ">
@@ -60,7 +60,7 @@ const Resume = () => {
           
           {experinces.map((experience, index) => (
             <div key={experience.id} className=" d-flex  mt-3 align-items-center">
-              <Image src={experience.indicatorImg} width={55} height={262} />
+              <Image src={experience.indicatorImg} alt={experience.company} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{experience.company}</p>
                 <h3 className="headline">{experience.role}</h3>
@@ -78,7 +78,7 @@ const Resume = () => {
           <div  className="justify-content-end  ">
           {educations.map((education, index) => (
             <div key={education.id} className=" d-flex  mt-3 align-items-center">
-              <Image src={education.indicatorImg} width={55} height={262} />
+              <Image src={education.indicatorImg} alt={education.school} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{education.school}</p>
                 <h3 className="headline">{education.level}</h3>

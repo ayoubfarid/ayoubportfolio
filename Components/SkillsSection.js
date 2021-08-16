@@ -4,8 +4,8 @@ const SkillsSection = () => {
   return (
     <div>
       <div className="row section-2 mt-5 justify-content-center">
-        <div className="head">
-          <h2>Skills</h2>
+        <div id="skills" className="head mt-5">
+          <h2  >Skills</h2>
           <p>
             Im sharing with you some framworks and tools that i used on my
             several project as Ui/Ux Designer and Web Developper

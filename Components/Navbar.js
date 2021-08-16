@@ -17,27 +17,27 @@ const Navbar = () => {
           <div className="navbar-collapse collapse flex-grow-1 text-right" id="collapsingNavbarSm">
             <ul className="navbar-nav ms-auto flex-nowrap align-items-center">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#skills">
                Skills
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#work">
                 Work
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#resume">
                Resume
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#contact">
                Contact
                 </a>
               </li>
               <li className="nav-item">
-              <button  type="button" className="btn   btn-warning ">
+              <button type="button" href="#contact" className="btn   btn-warning ">
                   {" "}
                   Hire me
                 </button>
@@ -53,9 +53,10 @@ const Navbar = () => {
         }
         * {
           font-family: Poppins;
+          scroll-behavior: smooth;
         }
         .container {
-          margin-top: 25px;
+          margin-top: 0px;
         }
         .logo-title {
           padding: 15px 0px;
