@@ -58,7 +58,7 @@ const Navbar = () => {
           margin-top: 25px;
         }
         .logo-title {
-          padding: 15px 15px;
+          padding: 15px 0px;
           font-size: 18px;
           color: #000000;
           font-weight: 500;

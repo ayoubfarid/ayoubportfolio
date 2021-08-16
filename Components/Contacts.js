@@ -20,8 +20,8 @@ const Contacts = () => {
               <Image
                 src="/Icons/chat.svg"
                 alt="Welcoming emojie"
-                width={85}
-                height={85}
+                width={80}
+                height={80}
               />
             </div>
 
@@ -84,10 +84,11 @@ const Contacts = () => {
             font-style: normal;
             font-weight: 600;
             font-size: 64px;
-            line-height: 96px;
+
+           
             letter-spacing: -0.03em;
 
-            color: #000000;
+            color: rgba(0, 0, 0, 0.5);
           }
 
           .section-4 {
