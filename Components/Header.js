@@ -12,7 +12,7 @@ const Header = () => {
               width={52.66}
               height={54}
             />
-            <div className="p-3">
+            <div className="p-3 ">
               <h2>Hi there</h2>
               <p>Welcome to my Portfolio</p>
             </div>
@@ -45,43 +45,55 @@ const Header = () => {
               application
             </p>
             <div className="header-button p-2">
-              <button type="button" className="btn hire-me btn-warning  ">
+              <a  href="#contact">
+                 <button type="button" className="btn hire-me btn-warning  ">
                 {" "}
                 Hire me{" "}
-              </button>
+              </button> 
+                </a>
+                <a href="resume/cv.pdf" download="Ayoub Farid Resume">
               <button
                 type="button"
                 className="btn  resume btn-outline-warning "
               >
                 {" "}
                 Resume <i className="bi bi-arrow-down"></i>
-              </button>
+              </button> </a>
             </div>
             <div className="p-3 social-links">
-              <Image
-                src="/Icons/socialmedia/dribbble.svg"
-                alt="Welcoming emojie"
-                width={55}
-                height={55}
-              />
-              <Image
-                src="/Icons/socialmedia/linkedin.svg"
-                alt="Welcoming emojie"
-                width={55}
-                height={55}
-              />
-              <Image
-                src="/Icons/socialmedia/github.svg"
-                alt="Welcoming emojie"
-                width={55}
-                height={55}
-              />
-              <Image
-                src="/Icons/socialmedia/facebook.svg"
-                alt="Welcoming emojie"
-                width={55}
-                height={55}
-              />
+              <a href="https://dribbble.com/Af_99" rel="noreferrer" target="_blank">
+                <Image
+                  src="/Icons/socialmedia/dribbble.svg"
+                  alt="Welcoming emojie"
+                  width={55}
+                  height={55}
+                />
+              </a>
+
+              <a href="https://www.linkedin.com/in/ayoub-farid-92b3a9198/" rel="noreferrer" target="_blank">
+                <Image
+                  src="/Icons/socialmedia/linkedin.svg"
+                  alt="Welcoming emojie"
+                  width={55}
+                  height={55}
+                />
+              </a>
+              <a href="https://github.com/ayoubfarid" rel="noreferrer" target="_blank">
+                <Image
+                  src="/Icons/socialmedia/github.svg"
+                  alt="Welcoming emojie"
+                  width={55}
+                  height={55}
+                />
+              </a>
+              <a href="https://www.facebook.com/ayoub.farid.391/" rel="noreferrer" target="_blank">
+                <Image
+                  src="/Icons/socialmedia/facebook.svg"
+                  alt="Welcoming emojie"
+                  width={55}
+                  height={55}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -99,9 +111,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
-        
         .section-1 {
         }
         .article-3 {
@@ -129,8 +140,6 @@ const Header = () => {
           font-size: 24px;
         }
         .card-designer {
-          
-
           margin-top: 150px;
           width: 300px;
           height: 90px;
@@ -183,11 +192,10 @@ const Header = () => {
         }
 
         .card-hello {
-          
           width: 393px;
           height: 127px;
-          margin:auto;
-          width:87%;
+          margin: auto;
+          width: 87%;
           background: #ffffff;
           box-shadow: 0px 2px 37px rgba(169, 169, 169, 0.39);
           border-radius: 26px;
@@ -206,7 +214,7 @@ const Header = () => {
         .card-hello Image {
         }
         .article-1 {
-         padding:0px;
+          padding: 0px;
         }
 
         * {

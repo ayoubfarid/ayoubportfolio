@@ -13,6 +13,7 @@ export default function Home() {
         <title>ayoubfarid</title>
         <link rel="icon" href="/avataricon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Welcome to Ayoub farid portfolio."></meta>
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins"
           rel="stylesheet"

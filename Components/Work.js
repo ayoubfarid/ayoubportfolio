@@ -100,6 +100,8 @@ const Work = () => {
                       <a
                         type="button"
                         target="_blank"
+                        
+                        rel="noreferrer"
                         href={project.link}
                         className="  btn btn-lg btn-outline-warning"
                       >
