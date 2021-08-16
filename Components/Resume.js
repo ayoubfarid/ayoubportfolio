@@ -53,13 +53,13 @@ const Resume = () => {
         </div>
       </div>
       <div className="row  ">
-        <div className="col mx-auto">
+        <div className="col-md-6 justify-content-center mx-auto">
           <h3 className="m-4">Experiences</h3>
-          <div  className="justify-content-center ">
+          <div  className=" ">
             
           
           {experinces.map((experience, index) => (
-            <div key={experience.id} className=" d-flex p-1 mt-3 align-items-center">
+            <div key={experience.id} className=" d-flex  mt-3 align-items-center">
               <Image src={experience.indicatorImg} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{experience.company}</p>
@@ -73,11 +73,11 @@ const Resume = () => {
             </div>
           ))}
         </div></div>
-        <div className="col">
+        <div className="col-md-6">
           <h3 className="m-4">Education</h3>
-          <div  className="justify-content-center ">
+          <div  className="justify-content-end  ">
           {educations.map((education, index) => (
-            <div key={education.id} className=" d-flex p-1 mt-3 align-items-center">
+            <div key={education.id} className=" d-flex  mt-3 align-items-center">
               <Image src={education.indicatorImg} width={55} height={262} />
               <div className="card-exp p-4  align-items-start">
                 <p className="sup-headline ">{education.school}</p>

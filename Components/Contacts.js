@@ -7,7 +7,7 @@ const Contacts = () => {
           <h2  className="mb-4"> Contact </h2>
         </div>
 
-        <div className="container ">
+        <div className="container mt-4">
           <div className="row ">
             <div className="col contact d-flex align-items-start">
               <div className="contact-desc">

@@ -4,64 +4,64 @@ import Image from "next/image";
 const Work = () => {
   var projects = [
     {
-      id:'1',
+      id: "1",
       title: "SellHomme",
       image: "/dribbble/selhome.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/15008207-SellHome-Landing-Page"
+      link: "https://dribbble.com/shots/15008207-SellHome-Landing-Page",
     },
     {
-      id:'2',
+      id: "2",
       title: "Portfolio 2021 v2",
       image: "/dribbble/portfolio.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/15924716-Portfolio-2021"
+      link: "https://dribbble.com/shots/15924716-Portfolio-2021",
     },
     {
-      id:'3',
+      id: "3",
       title: "Co-team",
       image: "/dribbble/coteam.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/14753416-Landing-Page-for-Co-team"
+      link: "https://dribbble.com/shots/14753416-Landing-Page-for-Co-team",
     },
     {
-      id:'4',
+      id: "4",
       title: "Recipes App",
       image: "/dribbble/recipes.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/14603809-UI-Recipes-App"
+      link: "https://dribbble.com/shots/14603809-UI-Recipes-App",
     },
     {
-      id:'5',
+      id: "5",
       title: "Portfolio 2021 v1",
       image: "/dribbble/portfoliov1.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/14597918-UI-Design-for-portfolio-2021"
+      link: "https://dribbble.com/shots/14597918-UI-Design-for-portfolio-2021",
     },
     {
-      id:'6',
+      id: "6",
       title: "Luxury Wach",
       image: "/dribbble/watchesluxury.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
       textDesc: "To see the full project in dribbble click the button below...",
       btnText: "View full Project",
-      link: "https://dribbble.com/shots/14717641-User-Interface-for-a-Luxury-watchs"
+      link: "https://dribbble.com/shots/14717641-User-Interface-for-a-Luxury-watchs",
     },
   ];
   return (
@@ -77,14 +77,13 @@ const Work = () => {
         <div className="container">
           <Swiper
             spaceBetween={100}
-            slidesPerView={1.5}
+            slidesPerView={1.75}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
             {projects.map((project, index) => (
-              
               <SwiperSlide key={project.id}>
-                <div  className="card col">
+                <div className="card col">
                   <Image
                     src={project.image}
                     alt="Welcoming emojie"
@@ -112,12 +111,26 @@ const Work = () => {
                 </div>
               </SwiperSlide>
             ))}
-            
           </Swiper>
         </div>
       </div>
       <style jsx>
         {`
+          .swiper-container {
+            width: 755px;
+          }
+
+          @media screen and (min-width: 640px) {
+            .swiper-container {
+              width: 451px;
+            }
+          }
+
+          @media screen and (min-width: 768px) {
+            .swiper-container {
+              width: 755px;
+            }
+          }
           .section-3 .container {
             margin-top: 20px;
           }
@@ -189,7 +202,7 @@ const Work = () => {
           .card {
             width: 755px;
             height: 708px;
-            margin: 0px 50px;
+            margin: 0px 10px;
             padding: 0px 50px;
             background: #ffffff;
 

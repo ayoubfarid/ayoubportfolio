@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <div className="container ">
       <div className="row section-1 ">
-        <div className="col article-1">
-          <div className="card-hello  ">
+        <div className="col-md-4 col-sm-6 article-1">
+          <div className="card-hello  d-flex align-items-center justify-content-center">
             <Image
               src="/Icons/hand.svg"
               alt="Welcoming emojie"
@@ -17,7 +17,7 @@ const Header = () => {
               <p>Welcome to my Portfolio</p>
             </div>
           </div>
-          <div className="card-designer  d-none align-items-center justify-content-center d-xl-flex">
+          <div className="card-designer   d-none align-items-center justify-content-center d-xl-flex">
             <Image
               src="/Icons/pencilui.png"
               alt="Welcoming emojie"
@@ -183,12 +183,11 @@ const Header = () => {
         }
 
         .card-hello {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          
           width: 393px;
           height: 127px;
-
+          margin:auto;
+          width:87%;
           background: #ffffff;
           box-shadow: 0px 2px 37px rgba(169, 169, 169, 0.39);
           border-radius: 26px;
@@ -207,9 +206,7 @@ const Header = () => {
         .card-hello Image {
         }
         .article-1 {
-          flex-direction: column;
-          align-content: space-between;
-          justify-content: space-between;
+         padding:0px;
         }
 
         * {

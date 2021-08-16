@@ -1,43 +1,64 @@
 const Navbar = () => {
   return (
-    <div className="container px-4">
-      <div className="row d-flex justify-content-between">
-        <div className="col">
+    <div className="container ">
+      <nav className="navbar navbar-expand-md navbar-white bg-white">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
           <h1 className="logo-title">ayoubfarid</h1>
-        </div>
-        <div className="col ">
-          <nav>
-            <ul className="nav justify-content-end align-items-center">
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsingNavbarSm"
+          >
+            <span className="bi bi-list"></span>
+          </button>
+          <div className="navbar-collapse collapse flex-grow-1 text-right" id="collapsingNavbarSm">
+            <ul className="navbar-nav ms-auto flex-nowrap align-items-center">
               <li className="nav-item">
-                <a>Skills</a>
+                <a className="nav-link" href="#">
+               Skills
+                </a>
               </li>
               <li className="nav-item">
-                <a>Work</a>
+                <a className="nav-link" href="#">
+                Work
+                </a>
               </li>
               <li className="nav-item">
-                <a>Resume</a>
+                <a className="nav-link" href="#">
+               Resume
+                </a>
               </li>
               <li className="nav-item">
-                <a>Contact</a>
+                <a className="nav-link" href="#">
+               Contact
+                </a>
               </li>
               <li className="nav-item">
-                <button  type="button" className="btn   btn-warning ">
+              <button  type="button" className="btn   btn-warning ">
                   {" "}
                   Hire me
                 </button>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
+    
       <style jsx>{`
+        .nav-item{
+          padding: 15px 15px;
+        }
         * {
           font-family: Poppins;
         }
         .container {
-          margin-top: 50px;
+          margin-top: 25px;
         }
         .logo-title {
+          padding: 15px 15px;
           font-size: 18px;
           color: #000000;
           font-weight: 500;
