@@ -76,6 +76,21 @@ const Work = () => {
         </div>
         <div className="container">
           <Swiper
+            breakpoints={{
+              // when window width is >= 640px
+              360: {
+                width: 360,
+                slidesPerView: 1,
+                spaceBetween: 450,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 1,
+                spaceBetween: 200,
+              },
+            }}
+            id="main"
             spaceBetween={100}
             slidesPerView={1.75}
             onSlideChange={() => console.log("slide change")}
@@ -83,24 +98,24 @@ const Work = () => {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={project.id}>
-                <div className="card col">
+                <div className="card-work">
                   <Image
+                    className="proj-image"
                     src={project.image}
                     alt="Welcoming emojie"
                     width={721}
                     height={541}
                     layout="responsive"
                   />
-                  <div className="card-cat">{project.categorie}</div>
-                  <div className="card-desc">
+                  <div className="card-work-cat">{project.categorie}</div>
+                  <div className="card-work-desc">
                     <div className="chip-cat">{project.chipCategorie}</div>
-                    <div className="card-headline">{project.title}</div>
-                    <div className="card-body">{project.textDesc}</div>
-                    <div className="card-btn">
+                    <div className="card-work-headline">{project.title}</div>
+                    <div className="card-work-body">{project.textDesc}</div>
+                    <div className="card-work-btn">
                       <a
                         type="button"
                         target="_blank"
-                        
                         rel="noreferrer"
                         href={project.link}
                         className="  btn btn-lg btn-outline-warning"
@@ -122,29 +137,43 @@ const Work = () => {
             width: 755px;
           }
 
-          @media screen and (min-width: 640px) {
+          @media (min-width: 310px) and (max-width: 450px) {
             .swiper-container {
               width: 451px;
             }
+            .card-work {
+              width: 451.17px;
+              height: 423.08px;
+            }
+            .proj-image {
+              width: 100%;
+            }
           }
 
-          @media screen and (min-width: 768px) {
+          @media (min-width: 768px) and (max-width: 960px) {
             .swiper-container {
               width: 755px;
+            }
+            .proj-image {
+              width: 755px;
+            }
+            .card-work {
+              width: 451.17px;
+              height: 423.08px;
             }
           }
           .section-3 .container {
             margin-top: 20px;
           }
-          .card-btn i {
+          .card-work-btn i {
             padding-left: 20px;
           }
-          .card-btn .btn {
+          .card-work-btn .btn {
             text-align: center;
             margin-top: 20px;
             width: 100%;
           }
-          .card-body {
+          .card-work-body {
             font-weight: normal;
             font-size: 18px;
             line-height: 27px;
@@ -153,7 +182,7 @@ const Work = () => {
 
             color: rgba(0, 0, 0, 0.5);
           }
-          .card-headline {
+          .card-work-headline {
             font-style: normal;
             font-weight: bold;
             font-size: 48px;
@@ -177,7 +206,7 @@ const Work = () => {
             //box-shadow: 0px 2px 21px rgba(146, 146, 146, 0.25);
             border-radius: 10px;
           }
-          .card-cat {
+          .card-work-cat {
             padding: 5px 20px;
             width: 175px;
 
@@ -191,7 +220,7 @@ const Work = () => {
             position: relative;
             color: #ffffff;
           }
-          .card-desc {
+          .card-work-desc {
             position: relative;
             top: -10%;
             z-index: 4;
@@ -201,8 +230,9 @@ const Work = () => {
             padding-top: 20px;
             margin-top: 20px;
           }
-          .card {
+          .card-work {
             width: 755px;
+           min-width: 450px;
             height: 708px;
             margin: 0px 10px;
             padding: 0px 50px;
