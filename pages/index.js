@@ -6,6 +6,7 @@ import SkillsSection from "../Components/SkillsSection";
 import Work from "../Components/Work";
 import Resume from "../Components/Resume";
 import Contacts from "../Components/Contacts";
+import Footer from "../Components/Footer";
 export default function Home() {
   return (
     <div className="container">
@@ -36,6 +37,7 @@ export default function Home() {
       <Work />
       <Resume />
       <Contacts />
+     <Footer />
     </div>
   );
 }

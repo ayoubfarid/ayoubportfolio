@@ -9,6 +9,7 @@ const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
+            ria-label="Menu"
             data-toggle="collapse"
             data-target="#collapsingNavbarSm"
           >
