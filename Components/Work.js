@@ -114,14 +114,14 @@ const Work = () => {
   return (
     <div className="container">
       <div className="row section-3 mt-5">
-        <div id="work" className="head mt-5">
+        <div data-aos="fade-up" id="work" className="head mt-5">
           <h2>Work</h2>
           <p>
             here you find some project that I done before such us User
             interfaces for mobile and landing pages
           </p>
         </div>
-        <div className="container">
+        <div data-aos="fade-up" className="container">
           <Slider {...settings}>
             {projects.map((project, index) => (
               <div key={project.id}>
@@ -156,84 +156,13 @@ const Work = () => {
               </div>
             ))}
           </Slider>
-          {/* <Swiper
-            breakpoints={{
-              // when window width is >= 640px
-              360: {
-                width: 360,
-                slidesPerView: 1,
-                spaceBetween: 450,
-              },
-              // when window width is >= 768px
-              768: {
-                width: 768,
-                slidesPerView: 1,
-                spaceBetween: 200,
-              },
-            }}
-            id="main"
-            spaceBetween={100}
-            slidesPerView={1.75}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            {projects.map((project, index) => (
-              <SwiperSlide key={project.id}>
-                <div className="card-work">
-                  <Image
-                    className="proj-image"
-                    src={project.image}
-                    alt="Welcoming emojie"
-                    width={721}
-                    height={541}
-                    layout="responsive"
-                  />
-                  <div className="card-work-cat">{project.categorie}</div>
-                  <div className="card-work-desc">
-                    <div className="chip-cat">{project.chipCategorie}</div>
-                    <div className="card-work-headline">{project.title}</div>
-                    <div className="card-work-body">{project.textDesc}</div>
-                    <div className="card-work-btn">
-                      <a
-                        type="button"
-                        target="_blank"
-                        rel="noreferrer"
-                        href={project.link}
-                        className="  btn btn-lg btn-outline-warning"
-                      >
-                        {project.btnText}{" "}
-                        <i className="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
+         
         </div>
       </div>
       <style jsx>
         {`
-          .swiper-container {
-            width: 755px;
-          }
-
-          @media (min-width: 310px) and (max-width: 450px) {
-            .card-work {
-              width: 451.17px;
-              height: 423.08px;
-            }
-            .proj-image {
-              width: 100%;
-            }
-          }
-
-          @media (min-width: 768px) and (max-width: 960px) {
-            .card-work {
-              width: 451.17px;
-              height: 423.08px;
-            }
-          }
+         
+         
           .section-3 .container {
             margin-top: 20px;
           }

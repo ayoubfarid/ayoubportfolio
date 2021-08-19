@@ -4,7 +4,7 @@ const SkillsSection = () => {
   return (
     <div>
       <div className="row section-2 mt-5 justify-content-center">
-        <div id="skills" className="head mt-5">
+        <div data-aos="fade-up" id="skills" className="head mt-5">
           <h2  >Skills</h2>
           <p>
             Im sharing with you some framworks and tools that i used on my
@@ -13,7 +13,7 @@ const SkillsSection = () => {
         </div>
         
         
-        <div className="cards-skils mt-2 row p-3">
+        <div data-aos="fade-up" className="cards-skils mt-2 row p-3">
           <div className="col-6 card mt-3">
             <Image
               src="/Icons/skills/devicon.png"

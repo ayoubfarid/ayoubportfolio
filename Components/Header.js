@@ -1,10 +1,18 @@
+
 import Image from "next/image";
 
+import Layout from "./layout";
+
 const Header = () => {
+
+  
   return (
-    <div className="container ">
-      <div className="row section-1 ">
-        <div className="col-md-4 col-sm-6 article-1">
+    <Layout>
+
+   
+    <div  className="container ">
+      <div  className="row section-1 ">
+        <div data-aos="fade-up" className="col-md-4 col-sm-6 article-1">
           <div className="card-hello  d-flex align-items-center justify-content-center">
             <Image
               src="/Icons/hand.svg"
@@ -29,7 +37,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="col article-2 mt-3">
+        <div data-aos="fade-up" className=" col article-2 mt-3">
           <div>
             <Image
               src="/Icons/avatar.png"
@@ -37,7 +45,7 @@ const Header = () => {
               width={264}
               height={264}
             />
-            <h2>Ayoub Farid </h2>
+            <h2>  <span id="name"></span>  </h2>
             <h3>UI/Ux Designer & Front-end Developer</h3>
             <p>
               My specialty is to Help startups,brands, agences to increase from
@@ -97,7 +105,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="col article-3 d-none d-xl-block">
+        <div data-aos="fade-up" className="col article-3 d-none d-xl-block">
           <div className="card-dev">
             <Image
               src="/Icons/devicon.png"
@@ -224,7 +232,7 @@ const Header = () => {
           margin-top: 50px;
         }
       `}</style>
-    </div>
+    </div> </Layout>
   );
 };
 

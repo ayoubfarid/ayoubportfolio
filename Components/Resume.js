@@ -48,14 +48,14 @@ const Resume = () => {
   return (
     <div className="container section-4 mt-5">
       <div className="row ">
-        <div id="resume" className="head mt-5">
+        <div data-aos="fade-up" id="resume" className="head mt-5">
           <h2>Resume</h2>
         </div>
       </div>
       <div className="row d-flex justify-content-between ">
         <div className="col-md-6 justify-content-center mx-auto">
-          <h3 className="m-4">Experiences</h3>
-          <div  className=" ">
+          <h3 data-aos="fade-up" className="m-4">Experiences</h3>
+          <div data-aos="fade-right" className=" ">
             
           
           {experinces.map((experience, index) => (
@@ -74,8 +74,8 @@ const Resume = () => {
           ))}
         </div></div>
         <div className="col-md-6">
-          <h3 className="m-4">Education</h3>
-          <div  className="justify-content-end  ">
+          <h3 className="m-4" data-aos="fade-up">Education</h3>
+          <div data-aos="fade-left"  className="justify-content-end  ">
           {educations.map((education, index) => (
             <div key={education.id} className=" d-flex  mt-3 align-items-center">
               <Image src={education.indicatorImg} alt={education.school} width={55} height={262} />

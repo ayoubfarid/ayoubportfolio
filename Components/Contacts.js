@@ -3,11 +3,11 @@ const Contacts = () => {
   return (
     <div className="container  ">
       <div className="row section-4 mt-5">
-        <div id="contact" className="head mt-5">
+        <div data-aos="fade-up" id="contact" className="head mt-5">
           <h2  className="mb-4"> Contact </h2>
         </div>
 
-        <div className="container mt-4">
+        <div data-aos="fade-up" className="container mt-4">
           <div className="row ">
             <div className="col contact d-flex align-items-start">
               <div className="contact-desc">
