@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import Image from "next/image";
 import Slider from "react-slick";
 
