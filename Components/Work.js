@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import Slider from "react-slick";
 
 const Work = () => {
   var projects = [
@@ -64,6 +65,52 @@ const Work = () => {
       link: "https://dribbble.com/shots/14717641-User-Interface-for-a-Luxury-watchs",
     },
   ];
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2.5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll:1,
+          initialSlide: 0,
+          dots: true
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 0.75,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
     <div className="container">
       <div className="row section-3 mt-5">
@@ -75,7 +122,41 @@ const Work = () => {
           </p>
         </div>
         <div className="container">
-          <Swiper
+          <Slider {...settings}>
+            {projects.map((project, index) => (
+              <div key={project.id}>
+                <div className="card-work">
+                  <Image
+                    className="proj-image"
+                    src={project.image}
+                    alt="Welcoming emojie"
+                    width={721}
+                    height={541}
+                    layout="responsive"
+                  />
+                  <div className="card-work-cat">{project.categorie}</div>
+                  <div className="card-work-desc">
+                    <div className="chip-cat">{project.chipCategorie}</div>
+                    <div className="card-work-headline">{project.title}</div>
+                    <div className="card-work-body">{project.textDesc}</div>
+                    <div className="card-work-btn ">
+                      <a
+                        type="button"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.link}
+                        className="  btn btn-lg btn-outline-warning"
+                      >
+                        {project.btnText}{" "}
+                        <i className="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+          {/* <Swiper
             breakpoints={{
               // when window width is >= 640px
               360: {
@@ -128,7 +209,7 @@ const Work = () => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
         </div>
       </div>
       <style jsx>
@@ -138,9 +219,6 @@ const Work = () => {
           }
 
           @media (min-width: 310px) and (max-width: 450px) {
-            .swiper-container {
-              width: 451px;
-            }
             .card-work {
               width: 451.17px;
               height: 423.08px;
@@ -151,12 +229,6 @@ const Work = () => {
           }
 
           @media (min-width: 768px) and (max-width: 960px) {
-            .swiper-container {
-              width: 755px;
-            }
-            .proj-image {
-              width: 755px;
-            }
             .card-work {
               width: 451.17px;
               height: 423.08px;
@@ -170,14 +242,14 @@ const Work = () => {
           }
           .card-work-btn .btn {
             text-align: center;
-            margin-top: 20px;
+           
             width: 100%;
           }
           .card-work-body {
             font-weight: normal;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 27px;
-
+            margin-bottom:10px;
             letter-spacing: -0.03em;
 
             color: rgba(0, 0, 0, 0.5);
@@ -185,7 +257,7 @@ const Work = () => {
           .card-work-headline {
             font-style: normal;
             font-weight: bold;
-            font-size: 48px;
+            font-size: 36px;
             line-height: 72px;
             /* identical to box height */
 
@@ -194,9 +266,9 @@ const Work = () => {
             color: #000000;
           }
           .chip-cat {
-            width: 97px;
-            padding: 5px 20px;
-            font-size: 14px;
+            width: 80px;
+            padding: 5px 15px;
+            font-size: 12px;
             line-height: 21px;
             text-align: center;
             letter-spacing: -0.03em;
@@ -207,12 +279,12 @@ const Work = () => {
             border-radius: 10px;
           }
           .card-work-cat {
-            padding: 5px 20px;
-            width: 175px;
+            padding: 5px 10px;
+            width: 110px;
 
             font-style: normal;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 14px;
             background: #ffcd00;
             border-radius: 5px;
             right: -70%;
@@ -231,11 +303,10 @@ const Work = () => {
             margin-top: 20px;
           }
           .card-work {
-            width: 755px;
-           min-width: 450px;
-            height: 708px;
-            margin: 0px 10px;
-            padding: 0px 50px;
+            width: 451.17px;
+            height: 423.08px;
+            margin: 0px 5px;
+            padding: 0px 25px;
             background: #ffffff;
 
             border-radius: 26px;

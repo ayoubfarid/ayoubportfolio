@@ -156,8 +156,9 @@ const SkillsSection = () => {
             letter-spacing: -0.03em;
           }
           .cards-skils .card {
-            width: 595px;
-            height: 558px;
+            width: 537.19px;
+height: 503.92px;
+
             min-height: 400px;
             display: flex;
             justify-content: center;
