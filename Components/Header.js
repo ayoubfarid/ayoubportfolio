@@ -37,7 +37,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className=" col article-2 mt-3">
+        <div data-aos="fade-up" className=" col-xl-4 col-md-6 col-md-6  article-2 mt-3">
           <div>
             <Image
               src="/Icons/avatar.png"
@@ -105,7 +105,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="col article-3 d-none d-xl-block">
+        <div data-aos="fade-up" className="col-xl-4 article-3 d-none d-xl-block">
           <div className="card-dev">
             <Image
               src="/Icons/devicon.png"
@@ -131,11 +131,11 @@ const Header = () => {
         }
         .card-dev h2 {
           font-weight: 600;
-          font-size: 24px;
+          font-size: 20px;
         }
         .card-dev {
           display: flex;
-          width: 364px;
+          width: 300px;
           height: 90px;
           justify-content: center;
           align-items: center;
@@ -201,6 +201,8 @@ const Header = () => {
 
         .card-hello {
           width: 393px;
+          max-width:380px;
+          min-width:380px;
           height: 127px;
           margin: auto;
           width: 87%;
@@ -210,7 +212,7 @@ const Header = () => {
         }
         .card-hello h2 {
           font-weight: 600;
-          font-size: 24px;
+          font-size: 20px;
         }
         .card-hello p {
           font-size: 18px;

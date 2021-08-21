@@ -62,7 +62,7 @@ const SkillsSection = () => {
                 <Image
                   src="/Icons/skills/logos/logo-spring-icon.svg"
                   alt="Welcoming emojie"
-                  width={140}
+                  width={40}
                   height={40}
                 />
                 <Image

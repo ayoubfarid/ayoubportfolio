@@ -6,7 +6,7 @@ const Work = () => {
   var projects = [
     {
       id: "1",
-      title: "SellHomme",
+      title: "SellHome",
       image: "/dribbble/selhome.png",
       categorie: "Landing Page",
       chipCategorie: "Ui design",
@@ -74,7 +74,7 @@ const Work = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -83,9 +83,18 @@ const Work = () => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1.5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -117,7 +126,7 @@ const Work = () => {
         <div data-aos="fade-up" id="work" className="head mt-5">
           <h2>Work</h2>
           <p>
-            here you find some project that I done before such us User
+            here you find some project that I done before such as User
             interfaces for mobile and landing pages
           </p>
         </div>

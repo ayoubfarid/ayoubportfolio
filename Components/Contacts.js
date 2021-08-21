@@ -25,7 +25,7 @@ const Contacts = () => {
               />
             </div>
 
-            <div className="col ">
+            <div className="col-md-6 col-lg-6">
               <form>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
@@ -56,7 +56,7 @@ const Contacts = () => {
                 </div>
 
                 <button type="submit" className="mt-2 btn btn-block btn-outline-warning">
-                  Leave Request
+                  Leave a Request
                 </button>
                </form>
             </div>

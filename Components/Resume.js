@@ -53,7 +53,7 @@ const Resume = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-between ">
-        <div data-aos="fade-up" className="col-md-6 justify-content-center mx-auto">
+        <div data-aos="fade-up" className="col-xl-5 col-lg-6 justify-content-center mx-auto">
           <h3 className="m-4">Experiences</h3>
           <div  className=" ">
             
@@ -73,7 +73,7 @@ const Resume = () => {
             </div>
           ))}
         </div></div>
-        <div className="col-md-6" data-aos="fade-up">
+        <div className="col-xl-5 col-lg-6" data-aos="fade-up">
           <h3 className="m-4" >Education</h3>
           <div  className="justify-content-end  ">
           {educations.map((education, index) => (
