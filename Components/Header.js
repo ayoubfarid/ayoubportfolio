@@ -202,7 +202,7 @@ const Header = () => {
         .card-hello {
           width: 393px;
           max-width:380px;
-          min-width:380px;
+          min-width:365px;
           height: 127px;
           margin: auto;
           width: 87%;

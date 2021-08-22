@@ -2,14 +2,14 @@ import Image from "next/image";
 const Contacts = () => {
   return (
     <div className="container  ">
-      <div className="row section-4 mt-5">
+      <div className="row section-4 mt-4 ">
         <div data-aos="fade-up" id="contact" className="head mt-5">
           <h2  className="mb-4"> Contact </h2>
         </div>
 
         <div data-aos="fade-up" className="container mt-4">
-          <div className="row ">
-            <div className="col contact d-flex align-items-start">
+          <div className="row d-flex justify-content-between">
+            <div className="col-md-5 contact d-flex align-items-start justify-content-center">
               <div className="contact-desc">
                 <h2 className="head">I’m excited</h2>
                 <p className="text-desc">
@@ -25,7 +25,7 @@ const Contacts = () => {
               />
             </div>
 
-            <div className="col-md-6 col-lg-6">
+            <div className="col-md-5 col-lg-5 justify-content-center">
               <form>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
