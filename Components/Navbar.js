@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="container ">
       <nav className="navbar navbar-expand-md navbar-white bg-white">
-        <div className="container-fluid">
+        <div className="container">
           <a className="navbar-brand" href="#">
             <h1 className="logo-title">ayoubfarid</h1>
           </a>
@@ -58,6 +58,10 @@ const Navbar = () => {
       </nav>
 
       <style jsx>{`
+        
+      .navbar-brand{
+        padding-left:0px;
+      }
         .nav-item {
           padding: 15px 15px;
         }

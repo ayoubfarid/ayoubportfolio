@@ -113,7 +113,17 @@ const Uiproject = () => {
           slidesToShow: 0.75,
           slidesToScroll: 1,
           initialSlide: 0,
-          dots: true,
+          
+        },
+      },
+      
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToShow: 0.60,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          
         },
       },
     ],
@@ -237,8 +247,8 @@ const Uiproject = () => {
           .card-work {
             width: 451.17px;
             height: 423.08px;
-            margin: 0px 5px;
-            padding: 0px 25px;
+            margin: 5px 15px;
+            padding: 0px 0px;
             background: #ffffff;
 
             border-radius: 26px;
