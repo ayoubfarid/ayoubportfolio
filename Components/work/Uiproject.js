@@ -248,6 +248,9 @@ const Uiproject = () => {
             margin-top: 20px;
           }
           .card-work {
+            position: relative;
+            top: 0;
+            transition: top ease 0.5s;
             width: 451.17px;
             height: 423.08px;
             margin: 5px 15px;
@@ -255,6 +258,9 @@ const Uiproject = () => {
             background: #ffffff;
 
             border-radius: 26px;
+          }
+          .card-work:hover{
+            top: -10px;
           }
         `}
       </style>

@@ -157,7 +157,7 @@ const SkillsSection = () => {
           }
           .cards-skils .card {
             width: 537.19px;
-height: 503.92px;
+            height: 503.92px;
 
             min-height: 400px;
             display: flex;
@@ -167,6 +167,13 @@ height: 503.92px;
             background: #ffffff;
             box-shadow: 0px 2px 37px rgba(169, 169, 169, 0.39);
             border-radius: 26px;
+            position: relative;
+            top: 0;
+            transition: top ease 0.5s;
+          }
+          .cards-skils .card:hover {
+            top: -10px;
+
           }
           .section-2 {
             margin-top: 100px;

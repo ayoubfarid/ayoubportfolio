@@ -4,7 +4,32 @@ import Image from "next/image";
 import Layout from "./layout";
 
 const Header = () => {
-
+  var socialmedia=[
+    {
+      id:1,
+      name:"dribbble",
+      assetsImage:"/Icons/socialmedia/dribbble.svg",
+      linkAccount:"https://dribbble.com/Af_99"
+    },
+    {
+      id:2,
+      name:"linkedIn",
+      assetsImage:"/Icons/socialmedia/linkedin.svg",
+      linkAccount:"https://www.linkedin.com/in/ayoub-farid-92b3a9198/"
+    },
+    {
+      id:3,
+      name:"github",
+      assetsImage:"/Icons/socialmedia/github.svg",
+      linkAccount:"https://github.com/ayoubfarid"
+    },
+    {
+      id:4,
+      name:"facebook",
+      assetsImage:"/Icons/socialmedia/facebook.svg",
+      linkAccount:"https://www.facebook.com/ayoub.farid.391/"
+    },
+  ]
   
   return (
     <Layout>
@@ -13,7 +38,7 @@ const Header = () => {
     <div  className="container ">
       <div  className="row section-1 ">
         <div data-aos="fade-up" className="col-md-4 col-sm-6 article-1">
-          <div className="card-hello  d-flex align-items-center justify-content-center">
+          <div className="card-hello mx-auto d-flex align-items-center justify-content-center">
             <Image
               src="/Icons/hand.svg"
               alt="Welcoming emojie"
@@ -25,7 +50,7 @@ const Header = () => {
               <p>Welcome to my Portfolio</p>
             </div>
           </div>
-          <div className="card-designer  d-none align-items-center justify-content-center d-xl-flex">
+          <div className="card-designer mx-auto  d-none align-items-center justify-content-center d-xl-flex">
             <Image
               src="/Icons/pencilui.png"
               alt="Welcoming emojie"
@@ -69,44 +94,24 @@ const Header = () => {
               </button> </a>
             </div>
             <div className="p-3 social-links">
-              <a href="https://dribbble.com/Af_99" rel="noreferrer" target="_blank">
+              {
+                socialmedia.map( (account,index) => (
+                  <a  key={index} className="sociel-link" href={account.linkAccount} rel="noreferrer" target="_blank">
                 <Image
-                  src="/Icons/socialmedia/dribbble.svg"
-                  alt="Welcoming emojie"
+                  src={account.assetsImage}
+                  alt={account.name}
                   width={55}
                   height={55}
                 />
               </a>
-
-              <a href="https://www.linkedin.com/in/ayoub-farid-92b3a9198/" rel="noreferrer" target="_blank">
-                <Image
-                  src="/Icons/socialmedia/linkedin.svg"
-                  alt="Welcoming emojie"
-                  width={55}
-                  height={55}
-                />
-              </a>
-              <a href="https://github.com/ayoubfarid" rel="noreferrer" target="_blank">
-                <Image
-                  src="/Icons/socialmedia/github.svg"
-                  alt="Welcoming emojie"
-                  width={55}
-                  height={55}
-                />
-              </a>
-              <a href="https://www.facebook.com/ayoub.farid.391/" rel="noreferrer" target="_blank">
-                <Image
-                  src="/Icons/socialmedia/facebook.svg"
-                  alt="Welcoming emojie"
-                  width={55}
-                  height={55}
-                />
-              </a>
+              )
+                )
+              }
             </div>
           </div>
         </div>
         <div data-aos="fade-up" className="col-xl-4 article-3 d-none d-xl-block">
-          <div className="card-dev">
+          <div className="card-dev mx-auto">
             <Image
               src="/Icons/devicon.png"
               alt="Welcoming emojie"
@@ -121,6 +126,15 @@ const Header = () => {
       </div>
 
       <style jsx>{`
+        .sociel-link{
+          position: relative;
+            top: 0;
+            transition: top ease 0.5s;
+        }
+        .sociel-link:hover{
+          top: -10px;
+
+        }
         .section-1 {
         }
         .article-3 {
@@ -136,6 +150,7 @@ const Header = () => {
         .card-dev {
           display: flex;
           width: 300px;
+          
           height: 90px;
           justify-content: center;
           align-items: center;

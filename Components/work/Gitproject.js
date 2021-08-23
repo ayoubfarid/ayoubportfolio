@@ -100,9 +100,15 @@ const Gitproject = () => {
         </Slider>
       </div>
       <style jsx>{`
+      .project:hover{
+        top: -10px;
+      }
           .project{
               width:360px;
               margin: 0px 10px;
+              position: relative;
+            top: 0;
+            transition: top ease 0.5s;
           }
         h3 {
           font-style: normal;
