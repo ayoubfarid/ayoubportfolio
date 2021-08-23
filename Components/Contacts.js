@@ -1,5 +1,13 @@
 import Image from "next/image";
 const Contacts = () => {
+
+  const sendRequest = event => {
+  console.log(event.target.email.value+" "+event.target.description.value+" "+event.target.object.value)
+    location.href = "mailto:ayoubfarid80@gmail.com"+'?cc='+event.target.email.value+'&subject='+event.target.object.value+'&body='+event.target.description.value;
+    event.preventDefault() // don't redirect the page
+    // where we'll add our form logic
+    
+  }
   return (
     <div className="container  ">
       <div className="row section-4 mt-4 ">
@@ -26,32 +34,38 @@ const Contacts = () => {
             </div>
 
             <div className="col-md-5 col-lg-5 justify-content-center">
-              <form>
+              <form  onSubmit={sendRequest}>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
                   <input
+                    name="email"
                     type="email"
                     className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    required
                   />
                 </div>
                 <div className="form-group">
                   <label htmlFor="exampleInputText2"> Object</label>
                   <input
+                  name="object"
                     type="text"
                     className="form-control"
                     id="exampleInputText2"
                     aria-describedby="TextHelp"
+                    required
                   />
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="exampleFormControlTextarea1">Description</label>
                   <textarea
+                   name="description"
                     className="form-control"
                     id="exampleFormControlTextarea1"
                     rows="4"
+                    required
                   ></textarea>
                 </div>
 
