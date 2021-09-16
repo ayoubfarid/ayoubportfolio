@@ -97,7 +97,6 @@ const Gitproject = () => {
         </Slider>
       </div>
       <style jsx>{`
-<<<<<<< HEAD
       .project:hover{
         top: -10px;
       }
@@ -108,8 +107,6 @@ const Gitproject = () => {
             top: 0;
             transition: top ease 0.5s;
           }
-=======
->>>>>>> parent of ba0678e (fix slider issue)
         h3 {
           font-style: normal;
           font-weight: 600;

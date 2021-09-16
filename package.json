@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out ayoubportfolio gh-pages"
+    "build": "next build ",
+    "start": "next start"
+   
   },
   "dependencies": {
     "@popperjs/core": "^2.9.3",
