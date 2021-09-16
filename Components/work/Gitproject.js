@@ -34,9 +34,6 @@ const Gitproject = () => {
     slidesToShow: 2.5,
     slidesToScroll: 1,
     initialSlide: 0,
-    
-      
-      
     responsive: [
       {
         breakpoint: 1200,
@@ -68,7 +65,7 @@ const Gitproject = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 0.75,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 0,
           dots: true,
@@ -91,7 +88,7 @@ const Gitproject = () => {
       <div className="row mt-5">
         <Slider {...settings}>
           {projects.map((project, index) => (
-            <div className="project" key={index}>
+            <div key={index}>
               <a href={project.link}>
                 <img src={project.image} />
               </a>
@@ -100,6 +97,7 @@ const Gitproject = () => {
         </Slider>
       </div>
       <style jsx>{`
+<<<<<<< HEAD
       .project:hover{
         top: -10px;
       }
@@ -110,6 +108,8 @@ const Gitproject = () => {
             top: 0;
             transition: top ease 0.5s;
           }
+=======
+>>>>>>> parent of ba0678e (fix slider issue)
         h3 {
           font-style: normal;
           font-weight: 600;

@@ -70,9 +70,6 @@ const Uiproject = () => {
     slidesToShow: 2.5,
     slidesToScroll: 1,
     initialSlide: 0,
-    
-      
-     
     responsive: [
       {
         breakpoint: 1200,
@@ -113,7 +110,7 @@ const Uiproject = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 0.65,
+          slidesToShow: 0.75,
           slidesToScroll: 1,
           initialSlide: 0,
           
@@ -121,7 +118,7 @@ const Uiproject = () => {
       },
       
       {
-        breakpoint: 375,
+        breakpoint: 370,
         settings: {
           slidesToShow: 0.60,
           slidesToScroll: 1,
