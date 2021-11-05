@@ -4,6 +4,16 @@ const Uiproject = () => {
   var projects = [
     {
       id: "1",
+      title: "Squid Game UI",
+      image: "/dribbble/squid.png",
+      categorie: "Landing Page",
+      chipCategorie: "Ui design",
+      textDesc: "To see the full project in dribbble click the button below...",
+      btnText: "View full Project",
+      link: "https://dribbble.com/shots/16656283-Squid-Game-Landing-Page",
+    },
+    {
+      id: "2",
       title: "SellHome",
       image: "/dribbble/selhome.png",
       categorie: "Landing Page",
@@ -13,7 +23,7 @@ const Uiproject = () => {
       link: "https://dribbble.com/shots/15008207-SellHome-Landing-Page",
     },
     {
-      id: "2",
+      id: "3",
       title: "Portfolio 2021 v2",
       image: "/dribbble/portfolio.png",
       categorie: "Landing Page",
@@ -23,7 +33,7 @@ const Uiproject = () => {
       link: "https://dribbble.com/shots/15924716-Portfolio-2021",
     },
     {
-      id: "3",
+      id: "4",
       title: "Co-team",
       image: "/dribbble/coteam.png",
       categorie: "Landing Page",
@@ -33,7 +43,7 @@ const Uiproject = () => {
       link: "https://dribbble.com/shots/14753416-Landing-Page-for-Co-team",
     },
     {
-      id: "4",
+      id: "5",
       title: "Recipes App",
       image: "/dribbble/recipes.png",
       categorie: "Landing Page",
@@ -53,7 +63,7 @@ const Uiproject = () => {
       link: "https://dribbble.com/shots/14597918-UI-Design-for-portfolio-2021",
     },
     {
-      id: "6",
+      id: "7",
       title: "Luxury Wach",
       image: "/dribbble/watchesluxury.png",
       categorie: "Landing Page",
