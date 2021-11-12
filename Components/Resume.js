@@ -28,15 +28,23 @@ const Resume = () => {
   var educations = [
     {
       id: "1",
+      school: "Faculty of Sciences and Techniques of Mohammedia",
+      level: "Engineer's degree at Software and integrated IT system",
+      period: "2021 - Present",
+      indicatorImg: "/experiences/indicator.svg",
+      postDesc:
+        "Loading ... ",
+    },{
+      id: "2",
       school: "Faculty of science and technologie Gueliz",
       level: "Bachlor's degree at computer science",
       period: "2020 - 2021",
-      indicatorImg: "/experiences/indicator.svg",
+      indicatorImg: "/experiences/indicatorDisabled.svg",
       postDesc:
         "Learn Advanced programming language and Networking:Routing and protocols  , -Web stack :Angular/Spring , -Java IHM, ",
     },
     {
-      id: "2",
+      id: "3",
       school: "Hight School of technologie Essaouira",
       level: " Computer science student",
       period: "2018 - 2020",
