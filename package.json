@@ -11,18 +11,18 @@
     "node": "18.x", "npm": "7.x"
   },
   "dependencies": {
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
-    "bootstrap": "^5.0.0-beta3",
-    "bootstrap-icons": "^1.5.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "ityped": "^1.0.3",
-    "next": "^13.1.2",
+    "next": "^14.1.4",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.0.0-beta.4",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "18.2.0",
-    "react-slick": "^0.28.1",
-    "sass": "^1.37.5",
-    "sharp": "^0.31.3",
+    "react-slick": "^0.30.2",
+    "sass": "^1.72.0",
+    "sharp": "^0.33.3",
     "slick-carousel": "^1.8.1"
   }
 }
